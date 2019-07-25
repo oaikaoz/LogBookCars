@@ -1,11 +1,6 @@
 <?php
    // echo "Hello LINE bot World!";
 
-
-
-   
-   
-
     $API_URL = 'https://api.line.me/v2/bot/message/reply';
     $APIPUSH_URL = 'https://api.line.me/v2/bot/message/push';
     $APIProfile_URL = 'https://api.line.me/v2/bot/profile/';
