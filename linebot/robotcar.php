@@ -23,7 +23,7 @@
  
 
     $push_body2 = json_encode($pushdata2, JSON_UNESCAPED_UNICODE);
-    $send_result2 = send_reply_message($APIPUSH_URL, $POST_HEADER, $push_body2);
+    $send_result2 = send_reply_message($API_URL, $POST_HEADER, $push_body2);
 
 
 
