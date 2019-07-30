@@ -32,9 +32,9 @@ curl_setopt_array($curl, array(
     "postman-token: 70baa78d-450c-f2dd-bcc1-8f70e6dd7e32"
   ),
 ));
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+curl_setopt($curl, CURLOPT_POST, 1);
+curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
 
 $response = curl_exec($curl);
