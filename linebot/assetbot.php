@@ -20,15 +20,10 @@
     $pushdata2= json_decode($result, true);
  
 
-        if (is_array($pushdata2) || is_object($pushdata2))
-        {
-            foreach ($pushdata2 as  $arr_data) {
-            
-            $push_body2 = json_encode($arr_data, JSON_UNESCAPED_UNICODE);
-            $send_result2 = push_message($APIPUSH_URL, $POST_HEADER, $push_body2);
-                
-            }
-        }
+   
+            $push_body2 = json_encode($pushdata2, JSON_UNESCAPED_UNICODE);
+            $send_result2 = send_reply_message($API_URL, $POST_HEADER, $push_body2);
+
 
 
     function send_reply_message($url, $post_header, $post_body)
